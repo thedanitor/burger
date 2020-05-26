@@ -15,4 +15,4 @@ VALUES
 ("Hamburger", false), 
 ("Cheeseburger", false), 
 ("Bacon Cheeseburger", false), 
-("Impossible Burger", false)
+("Impossible Burger", false);
