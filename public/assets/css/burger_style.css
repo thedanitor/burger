@@ -10,6 +10,7 @@ h1 {
     font-weight: bold;
     font-size: 48px;
     color: #dc3545;
+    margin-bottom: 50px;
 }
 
 #daFont {
@@ -18,10 +19,11 @@ h1 {
 
 h2 {
     color: #dc3545;
+    font-weight: bold;
 }
 
 .card {
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255,255,255,0.4);
     border: none;
     /* color: red; */
     font-weight: bold;

@@ -14,6 +14,8 @@ LINK HERE!!!!!!!!!!!!!!!!
 
 ## Description
 
+GIF HERE!!!!!!!!!!!!!!!!!!
+
 This full-stack web application allows the user to input a burger they would like to eat. When they add a burger it will be saved in the Available Burgers section on the left side of the page. User can then press the Eat it! button which will move the burger to the Burgers Eaten column on the right side.
 
 ## Technologies Used
