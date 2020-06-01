@@ -1,45 +1,54 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container text-center">
+    <h1>Eat-Da-Burger!</h1>
+</div>
 <div class="container">
     <div class="row">
-<div id="burgerMenu" class="col-4">
-    <h2>Available Burgers</h2>
+        <div id="burgerMenu" class="col text-center">
+            <h2>Available Burgers</h2>
 
-    <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        <div class="card">
-        <span>{{this.burger_name}}</span>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <div class="card">
+                    {{!-- <span>{{this.burger_name}}</span>
         <form class="devour-form button-size">
             <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
             <button type="submit" class="btn btn-warning" id="eatBtn">Eat it!</button>
-        </form>
+        </form> --}}
+                    <div class="card-body">{{this.burger_name}}
+                        <button class="btn btn-warning" data-id="{{id}}" data-newDevoured="{{devoured}}">Eat
+                            it!</button>
+                    </div>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
         </div>
-        {{/unless}}
-        {{/each}}
-    </ul>
-</div>
 
-<div id="addBurger"  class="col-4">
-<h2>Add a Burger</h2>
-<form class="create-form" action="/api/burgers" method="POST">
-    <div class="form-group">
-        <label for="burgerName">Burger Name:</label>
-        <input type="text" id="burgerName" name="name">
+        <div id="addBurger" class="col text-center">
+            <h2>Add a Burger</h2>
+            <form class="create-form" action="/api/burgers" method="POST">
+                <div class="form-group">
+                    <label for="burgerName">Burger Name:</label>
+                    <input type="text" id="burgerName" name="name">
+                </div>
+                <button type="submit" class="btn btn-danger">Add Burger</button>
+            </form>
+        </div>
+
+        <div id="eatenBurgers" class="col text-center">
+            <h2>Burgers Eaten</h2>
+
+            <ul>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                {{!-- <span>{{this.burger_name}}</span> --}}
+                <div class="card">
+                    <div class="card-body">{{this.burger_name}}</div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
-    <button type="submit">Add Burger</button>
-</form>
-</div>
-
-<div id="eatenBurgers"  class="col-4">
-    <h2>Burgers Eaten</h2>
-
-    <ul>
-        {{#each burgers}}
-        {{#if this.devoured}}
-        <span>{{this.burger_name}}</span>
-        {{/if}}
-        {{/each}}
-    </ul>
-</div>
-</div>
 </div>

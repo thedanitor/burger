@@ -1,5 +1,16 @@
 body {
     background-image: url("../img/burger_hi_res.jpg");
     background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    font-family: 'Anton', sans-serif;
 }
 
+h1 {
+    position: center;
+}
+
+.card {
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
