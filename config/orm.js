@@ -5,7 +5,7 @@ var orm = {
     var queryString = "SELECT * FROM ??";
     connection.query(queryString, [table], function (err, result) {
       if (err) throw err;
-      console.log(result)
+      // console.log(result)
       cb(result);
     });
   },
@@ -17,13 +17,14 @@ var orm = {
       result
     ) {
       if (err) throw err;
-      console.log(result);
+      // console.log(result);
       cb(result);
     });
   },
 
   updateOne: function (table, colName, colVal, keyName, keyVal, cb) {
     var queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
+    console.log(queryString);
     connection.query(
       queryString,
       [table, colName, colVal, keyName, keyVal],
