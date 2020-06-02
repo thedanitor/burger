@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-    $("#eatBtn").on("click", function(event) {
+    $(".eatBtn").on("click", function(event) {
       var id = $(this).data("id");
       var newDevoured = $(this).data("newDevoured");
 
@@ -16,6 +16,7 @@ $(function() {
         function() {
           console.log("changed burger to devoured", newDevoured);
           // Reload the page to get the updated list
+          event.preventDefault();
           location.reload();
         }
       );

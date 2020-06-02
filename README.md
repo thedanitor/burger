@@ -22,7 +22,7 @@ This full-stack web application allows the user to input a burger they would lik
 
 This application was developed with MySQL, Node, Express, and Handlebars using the MVC design concept.
 
-Model: An ORM was created to interface with the MySQL database\
+Model: An ORM was created to interface with the MySQL database to Create, Read, and Update\
 View: Handlebars was used to render the HTML from the server\
 Controller: Express was used for the route handling
 

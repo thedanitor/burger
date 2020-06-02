@@ -15,9 +15,8 @@
             <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
             <button type="submit" class="btn btn-warning" id="eatBtn">Eat it!</button>
         </form> --}}
-                    <div class="card-body">{{this.burger_name}}
-                        <button class="btn btn-warning" data-id="{{id}}" data-newDevoured="{{devoured}}">Eat
-                            it!</button>
+                    <div class="card-body">{{burger_name}}
+                        <button class="btn btn-warning eatBtn" data-id="{{id}}" data-newDevoured="{{devoured}}">Eat it!</button>
                     </div>
                 </div>
                 {{/unless}}
@@ -42,7 +41,6 @@
             <ul>
                 {{#each burgers}}
                 {{#if this.devoured}}
-                {{!-- <span>{{this.burger_name}}</span> --}}
                 <div class="card">
                     <div class="card-body">{{this.burger_name}}</div>
                 </div>
