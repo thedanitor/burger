@@ -5,7 +5,6 @@ var orm = {
     var queryString = "SELECT * FROM ??";
     connection.query(queryString, [table], function (err, result) {
       if (err) throw err;
-      // console.log(result)
       cb(result);
     });
   },
@@ -17,7 +16,6 @@ var orm = {
       result
     ) {
       if (err) throw err;
-      // console.log(result);
       cb(result);
     });
   },
@@ -30,7 +28,6 @@ var orm = {
       [table, colName, colVal, keyName, keyVal],
       function (err, result) {
         if (err) throw err;
-        console.log(result);
         cb(result);
       }
     );

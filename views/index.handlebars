@@ -10,11 +10,6 @@
                 {{#each burgers}}
                 {{#unless devoured}}
                 <div class="card">
-                    {{!-- <span>{{this.burger_name}}</span>
-        <form class="devour-form button-size">
-            <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-            <button type="submit" class="btn btn-warning" id="eatBtn">Eat it!</button>
-        </form> --}}
                     <div class="card-body">{{burger_name}}
                         <button class="btn btn-warning eatBtn" data-id="{{id}}" data-newDevoured="{{devoured}}">Eat it!</button>
                     </div>

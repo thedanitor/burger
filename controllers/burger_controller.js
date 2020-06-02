@@ -15,18 +15,14 @@ router.get("/", function (req, res) {
 router.post("/api/burgers", function (req, res) {
   burger.create("burger_name", req.body.burger_name, function (result) {
     res.json({ id: result.insertId });
-    // res.status(200).end();
+    res.status(200).end();
   });
 });
 
 router.put("/api/burgers/:id", function (req, res) {
   burger.update("devoured", true, "id", req.params.id, function (result) {
       console.log(req.params.id);
-    // if (result.changedRows === 0) {
-    //     return res.status(404).end();
-    //   } else {
     res.status(200).end();
-    //   }
   });
 });
 module.exports = router;
