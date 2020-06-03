@@ -2,7 +2,9 @@
 
 I made a webpage application that lets the user add burgers they would like to eat.
 
-LINK HERE!!!!!!!!!!!!!!!!
+https://desolate-lake-88322.herokuapp.com/
+
+![Burger Home](/public/assets/img/homepage.png)
 
 ## Table of Contents
 
@@ -14,7 +16,7 @@ LINK HERE!!!!!!!!!!!!!!!!
 
 ## Description
 
-GIF HERE!!!!!!!!!!!!!!!!!!
+![Burger Logger](/public/assets/img/useBurgerLogger.gif)
 
 This full-stack web application allows the user to input a burger they would like to eat. When they add a burger it will be saved in the Available Burgers section on the left side of the page. User can then press the Eat it! button which will move the burger to the Burgers Eaten column on the right side.
 
@@ -35,11 +37,11 @@ Now application is ready to use!
 
 ## Usage
 
-Go to LINK HERE!!!!!!!!!!!!!!!!! in your browser.
+Go to https://desolate-lake-88322.herokuapp.com/ in your browser.
 
+Enter any burgers you want to eat in the Burger Name field under Add a Burger.
 
-
-
+Click on the Eat it! button to see the burger in the Burgers Eaten column.
 
 ## Acknowledgements
 
