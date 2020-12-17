@@ -2,7 +2,7 @@
 
 I made a webpage application that lets the user add burgers they would like to eat.
 
-https://desolate-lake-88322.herokuapp.com/
+https://dansburgers.herokuapp.com/
 
 ![Burger Home](/public/assets/img/homepage.png)
 
@@ -37,7 +37,7 @@ Now application is ready to use!
 
 ## Usage
 
-Go to https://desolate-lake-88322.herokuapp.com/ in your browser.
+Go to https://dansburgers.herokuapp.com/ in your browser.
 
 Enter any burgers you want to eat in the Burger Name field under Add a Burger.
 
